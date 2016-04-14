@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_acoes_noticias"
+            android:icon="@mipmap/icone_noticias"
+            android:title="@string/menu_acoes_noticias" />
+        <item
+            android:id="@+id/nav_sugestoes"
+            android:icon="@mipmap/icone_participe"
+            android:title="@string/menu_participe" />
+        <item
+            android:id="@+id/nav_m_sugestoes"
+            android:icon="@mipmap/icone_participacoes"
+            android:title="@string/menu_fale_conosco" />
+        <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/ic_action_sair"
+            android:title="@string/menu_sair" />
+    </group>
+
+
+</menu>

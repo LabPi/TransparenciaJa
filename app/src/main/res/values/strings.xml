@@ -1,0 +1,71 @@
+<resources>
+    <!--
+        keystore: cabuu.jks
+        senha: cabuu
+
+        Alias: cabuu
+        senha: cabuu
+    -->
+
+    <string name="app_name">Cabuu</string>
+    <string name="activity_criar_conta">Criar conta</string>
+    <string name="title_activity_maps">Local da sugestão</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="facebook_app_id">864399497023115</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- CRIAR CONTA -->
+    <string name="aviso_sem_foto">Onde está a sua foto?</string>
+    <string name="aviso_sem_nome">Qual é o seu nome?</string>
+    <string name="aviso_sem_email">Qual é o seu e-mail?</string>
+    <string name="aviso_email_invalido">E-mail inválido</string>
+    <string name="aviso_sem_telefone">Qual é o seu telefone?</string>
+    <string name="aviso_sem_senha">Qual é a sua senha?</string>
+    <string name="aviso_senha_pequena">Sua senha possui menos de 4 caracteres</string>
+    <string name="email">E-mail</string>
+    <string name="senha">Senha</string>
+    <string name="telefone">Telefone</string>
+    <string name="nome">Nome</string>
+    <string name="criar">Criar</string>
+
+    <!-- SUGESTAO -->
+    <string name="sua_sugestao">Sua sugestão</string>
+    <string name="avancar_sugestao">Avançar</string>
+    <string name="titulo">Título</string>
+    <string name="fale_conosco">Secretaria de Estado da Saúde do Piauí \n
+                                Av. Pedro Freitas, Teresina, \n
+                                CEP 64018-200 \n </string>
+
+    <!-- ITENS DO MENU -->
+    <string name="menu_acoes_noticias">Notícias</string>
+    <string name="menu_participe">Participe</string>
+    <string name="menu_fale_conosco">Participações</string>
+    <string name="menu_avalie">Avalie</string>
+    <string name="menu_entrar">Entrar</string>
+    <string name="menu_sair">Sair</string>
+
+    <!-- LOGIN / ENTRAR -->
+    <string name="entrar">Entrar</string>
+    <string name="criar_conta">Criar conta</string>
+    <string name="title_activity_login">Notícias</string>
+    <string name="title_activity_sugestoes">Enviar sugestão</string>
+    <string name="title_activity_comentario">Comentários</string>
+
+    <!-- COMENTARIO -->
+    <string name="enviar_sugestao">Enviar</string>
+    <string name="descricao">Descrição</string>
+    <string name="anonimo">Enviar em anônimo?</string>
+    <string name="endereco">Endereço</string>
+    <string name="adicione_midias">Adicione fotos e vídeos da sugestão</string>
+    <string name="title_activity_show_video">ShowVideoActivity</string>
+
+    <!-- EDITAR PERFIL -->
+    <string name="atualizar">Atualizar</string>
+</resources>

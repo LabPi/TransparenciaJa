@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context="com.iaware.cge.view.OpcaoDeOlhoNaGestao">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:paddingTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="fill_parent"
+                android:layout_height="80dp"
+                android:drawSelectorOnTop="true" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/adicione_midias"
+                    android:textSize="15sp"/>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="180dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:background="#f0f0f0">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_midia1"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.39"
+                        android:background="#f0f0f0">
+
+                        <ImageView
+                            android:id="@+id/midia1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:id="@+id/textView1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="foto/vídeo 1"
+                            android:alpha="0.7"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"></LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_midia2"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.39"
+                        android:background="#f0f0f0">
+
+                        <ImageView
+                            android:id="@+id/midia2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="foto/vídeo 2"
+                            android:alpha="0.7"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#000"></LinearLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_midia3"
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.39"
+                        android:background="#f0f0f0">
+
+                        <ImageView
+                            android:id="@+id/midia3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:text="foto/vídeo 3"
+                            android:alpha="0.7"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:textSize="10sp" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:id="@+id/localizacao">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/titulo"
+                            android:hint="@string/titulo"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="textShortMessage|textMultiLine"
+                            android:scrollHorizontally="false"
+                            android:scrollbars="vertical" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_toLeftOf="@+id/on_click_localizacao"
+                        android:layout_toStartOf="@+id/on_click_localizacao">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/endereco"
+                            android:hint="@string/endereco"
+                            android:layout_gravity="center_horizontal"
+                            android:inputType="textShortMessage|textMultiLine"
+                            android:scrollHorizontally="false"
+                            android:scrollbars="vertical"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_toLeftOf="@+id/on_click_localizacao"
+                            android:layout_toStartOf="@+id/on_click_localizacao" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+                    <ImageButton
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/on_click_localizacao"
+                        android:src="@drawable/ic_action_location"
+
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true" />
+
+
+                </RelativeLayout>
+
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/anonimo"
+                    android:id="@+id/anonimo" />
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/descricao"
+                        android:hint="@string/descricao"
+                        android:layout_gravity="center_horizontal"
+                        android:inputType="textShortMessage|textMultiLine"
+                        android:scrollHorizontally="false"
+                        android:scrollbars="vertical" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/enviar_sugestao"
+                    android:textColor="#fff"
+                    android:background="@color/colorButton"
+                    android:textSize="20sp"
+                    android:id="@+id/enviar" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

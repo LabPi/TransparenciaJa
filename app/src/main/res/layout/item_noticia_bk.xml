@@ -1,0 +1,322 @@
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="false"
+    app:cardPreventCornerOverlap="true">
+
+    <LinearLayout
+        android:id="@+id/relative"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/iv_noticia"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:scaleType="fitXY"
+            android:background="#f3f3f3"/>
+
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="5dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/iv_noticia">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/iv_categoria"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                fresco:roundAsCircle="true"
+                android:scaleType="fitXY"
+                android:background="#FFFFFF"/>
+
+            <TextView
+                android:id="@+id/tv_categoria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="16dp"
+                android:paddingLeft="16dp"
+                android:text="Categoria do post"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="data"
+                android:id="@+id/tv_data"
+                android:paddingRight="16dp"
+                android:textSize="12dp"
+                android:gravity="right"
+                />
+
+        </LinearLayout>
+<!--
+        <LinearLayout
+            android:id="@+id/linear_layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/linear_layout">
+
+            <! <LinearLayout
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:background="@color/colorAccent">
+
+            </LinearLayout> ->
+
+            <TextView
+                android:id="@+id/tv_descricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="Titulo do post"
+                android:layout_gravity="center_vertical"
+                android:fontFamily="sans-serif"
+                android:textSize="15dp"
+                android:layout_weight="1"/>
+
+        </LinearLayout>
+-->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative">
+
+            <LinearLayout
+                android:id="@+id/linear_indicadores"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TESTE"
+                        android:id="@+id/numero_curtidas"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/numero_comentarios"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="7dp">
+
+            <Button
+                android:id="@+id/img_curtir"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/icone_curtir_branco"
+                />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp">
+            <Button
+                android:id="@+id/img_comentario"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@mipmap/icone_comentar"
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- NOVO  -->
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relative">
+
+            <LinearLayout
+                android:id="@+id/linear_indicadores"
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:text="TESTE"
+                        android:id="@+id/numero_curtidas"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:id="@+id/numero_comentarios"
+                        android:textSize="12sp"/>
+                </RelativeLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="#fff" >
+
+            <RelativeLayout
+                android:id="@+id/acao_curtir"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="#fff" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/img_curtir"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:alpha="0.7"
+                        android:background="@drawable/apoiam"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_curtir"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Curtir"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_curtir"
+                        android:layout_toEndOf="@+id/img_curtir" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acao_comentar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="#fff" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/img_comentario"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:alpha="0.7"
+                        android:background="@drawable/img_comentario"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_comentario"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Comentar"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_comentario"
+                        android:layout_toEndOf="@+id/img_comentario" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/acao_compartilhar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                android:background="#fff" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:id="@+id/img_compartilhar"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:alpha="0.7"
+                        android:background="@drawable/img_compartilhar"
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_compartilhar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Compartilhar"
+                        android:textSize="10sp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@+id/img_compartilhar"
+                        android:layout_toEndOf="@+id/img_compartilhar" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+        -->
+        <!-- FIM -->
+    </LinearLayout>
+</android.support.v7.widget.CardView>
