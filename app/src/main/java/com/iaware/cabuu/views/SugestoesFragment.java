@@ -235,12 +235,14 @@ public class SugestoesFragment extends Fragment implements GoogleApiClient.Conne
         builder.setPositiveButton("Sim",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface arg0, int arg1) {
-                        if(controle == 1){
-                            midia1 = new Midia("","",1);
-                        }else if(controle == 2){
-                            midia2 = new Midia("","",2);;
-                        }else if(controle == 3){
-                            midia3 = new Midia("","",3);;
+                        if (controle == 1) {
+                            midia1 = new Midia("", "", 1);
+                        } else if (controle == 2) {
+                            midia2 = new Midia("", "", 2);
+                            ;
+                        } else if (controle == 3) {
+                            midia3 = new Midia("", "", 3);
+                            ;
                         }
                         imgView.setImageBitmap(null);
                     }
@@ -296,6 +298,8 @@ public class SugestoesFragment extends Fragment implements GoogleApiClient.Conne
             System.out.println("Longitude: " + longitude);
             getAddressFromLocation(latitude,longitude, getActivity(), new Handler());
         }else if(data == null){
+            System.out.println("cancel");
+        }else if(requestCode == 1 && resultCode == 0 && data != null){
             System.out.println("cancel");
         }else{
             try {
@@ -492,7 +496,7 @@ public class SugestoesFragment extends Fragment implements GoogleApiClient.Conne
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            dialog = ProgressDialog.show(mContex, "", "Carregando programas...", true);
+            dialog = ProgressDialog.show(mContex, "", "Carregando categorias...", true);
         }
 
         @Override

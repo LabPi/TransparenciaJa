@@ -1,10 +1,10 @@
 <resources>
     <!--
         keystore: cabuu.jks
-        senha: cabuu
+        senha: cabuu123
 
         Alias: cabuu
-        senha: cabuu
+        senha: cabuu123
     -->
 
     <string name="app_name">Cabuu</string>

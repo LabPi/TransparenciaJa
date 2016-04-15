@@ -1,10 +1,10 @@
 package com.iaware.cabuu.views;
 
 import android.app.Activity;
+import android.app.Fragment;
 import android.app.ProgressDialog;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -12,7 +12,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.iaware.cabuu.utils.GlobalDialog;
 import com.iaware.cabuu.R;
 import com.iaware.cabuu.adapters.MinhasParticipacoesAdapter;
 import com.iaware.cabuu.entidades.MinhaParticipacao;
@@ -209,7 +208,6 @@ public class MinhasParticipacoesFragment extends Fragment {
                 } else if(result.equals("[]")){
                     stop = true;
                 }else if(result.contains("Nenhuma participação encontrado") && contador == 0){
-                    GlobalDialog.alert(mContex, "Nenhuma participação encontrado", "Ok");
                 }else{
 
                     JSONArray jsonArray = new JSONArray(result);

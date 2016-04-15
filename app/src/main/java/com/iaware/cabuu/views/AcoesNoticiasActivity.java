@@ -13,15 +13,14 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
-import com.iaware.cabuu.entidades.Noticia;
-import com.iaware.cabuu.utils.ConversorInputStreamToString;
-import com.iaware.cabuu.utils.CustomDialog;
-import com.iaware.cabuu.utils.GlobalDialog;
-import com.iaware.cabuu.utils.JSONConverter;
 import com.iaware.cabuu.R;
 import com.iaware.cabuu.adapters.NoticiaAdapter;
+import com.iaware.cabuu.entidades.Noticia;
 import com.iaware.cabuu.entidades.Usuario;
 import com.iaware.cabuu.utils.Connection;
+import com.iaware.cabuu.utils.ConversorInputStreamToString;
+import com.iaware.cabuu.utils.CustomDialog;
+import com.iaware.cabuu.utils.JSONConverter;
 import com.iaware.cabuu.utils.Links;
 
 import org.json.JSONArray;
@@ -182,7 +181,7 @@ public class AcoesNoticiasActivity extends Fragment {
                 } else if(result.equals("[]")){
                     stop = true;
                 }else if(result.contains("Nenhuma participação encontrado") && contador == 0){
-                    GlobalDialog.alert(mContex, "Nenhuma participação encontrado", "Ok");
+
                 }else{
 
                     JSONArray jsonArray = new JSONArray(result);
